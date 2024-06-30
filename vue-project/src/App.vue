@@ -1,4 +1,6 @@
+// 版面本體，如丙級的#main區塊
 <template lang="pug">
+// 每一區塊裡的東西可再拆成各自的小元件（檔案存在資料夾component中）
 TopImage
 #left
   LeftMenu
@@ -30,7 +32,7 @@ TopImage
 </style>
 
 <script setup>
-import TopImage from '@/components/TopImage.vue'
-import LeftMenu from '@/components/LeftMenu.vue'
-import RightMarquee from '@/components/RightMarquee.vue'
+import TopImage from "@/components/TopImage.vue";
+import LeftMenu from "@/components/LeftMenu.vue";
+import RightMarquee from "@/components/RightMarquee.vue";
 </script>
