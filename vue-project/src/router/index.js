@@ -10,8 +10,7 @@ const router = createRouter({
       // 名字為home
       name: "home",
       // 顯示HomeView這個元件
-      // 這個寫法是不論你進到哪個網頁都會讀取這個檔案
-      component: HomeView, // 寫法1
+      component: HomeView, // 寫法1：不論你進到哪個頁面都會讀取這個元件
       meta: {
         title: "國家公園介紹網",
       },
@@ -21,8 +20,7 @@ const router = createRouter({
       name: "yangmingshan",
       // 不一定會有元件
       // 動態引用（這是promise的語法）
-      // 此寫法是當進到這個網頁的時候才會讀取這個檔案，比較節省資源
-      component: () => import("@/views/YangMingShanView.vue"), // 寫法2
+      component: () => import("@/views/YangMingShanView.vue"), // 寫法2：當進到這個網頁的時候才會讀取這個元件，比較節省資源
       meta: {
         title: "陽明山",
       },
