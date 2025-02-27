@@ -6,23 +6,25 @@ TopImage
   LeftMenu
 #right
   RightMarquee
-  //- 也可以寫成router-view
+  //- RouterView(也可以寫成router-view)：有裝vue的路由就可以使用的元件，此區塊會根據目前的路徑顯示對應的元件
   RouterView
 </template>
 
+<!-- scoped只會影響到內層的東西，#app在外層所以不能加scoped -->
 <style lang="sass">
 #app
   width: 1024px
   height: 768px
   margin: auto
 </style>
+
 <style scoped lang="sass">
 #left
   width: 200px
   height: calc( 768px - 20px - 65px)
   float: left
-  // darken()用於調暗度
-  background: darken(#0ff, 10%)
+  // background: darken(#0ff, 10%) // darken()用於調暗度 要改版了之後會停用
+  background: #0ff
   margin-left: 12px
 #right
   width: 800px

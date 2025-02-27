@@ -1,15 +1,16 @@
+<!-- 此檔案預設為首頁 -->
 <template lang="pug">
-//- route是取得路由的資訊
+//- route => 取得路由的資訊
 pre {{ $route }}
 pre {{ $route.path }}
 pre {{ $route.fullPath }}
 pre {{ $route.meta }}
 
-//- 不用JS的路由之寫法
+//- 不寫在<script></script>的路由之寫法
+//- router => 對路由做操作
 img(src="@/assets/national_park.jpg" @click="$router.push('/yangmingshan')")
-//- 用JS的路由之寫法
-img(src="@/assets/national_park.jpg")
+//- img(src="@/assets/national_park.jpg" @click="$router.push({name: home})")
 </template>
 
-<!-- JS的跳頁 -->
+<!-- 寫在<script></script>的路由之寫法參考檔案YangMingShanView.vue -->
 <script></script>

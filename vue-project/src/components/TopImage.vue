@@ -10,5 +10,6 @@
         height: 65px
         margin: auto
         text-align: center
-        background: darken(blue, 30%)
+        // background: darken(blue, 30%) 改版之後會停用darken()
+        background: blue
 </style>
